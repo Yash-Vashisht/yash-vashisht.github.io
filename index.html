@@ -3,129 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Creative Designer Portfolio - UI/UX, Graphic Design, Video Editing
-    </title>
+    <title>Creative Designer - UI/UX & Graphic Design</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- Mobile Menu Checkbox -->
-    <input
-      type="checkbox"
-      id="mobile-menu-toggle"
-      class="mobile-menu-checkbox"
-    />
-
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar">
+    <!-- Header -->
+    <header class="header" id="header">
       <div class="container">
-        <div class="nav-content">
-          <div class="logo">
-            <a href="#home" class="gradient-text">Portfolio</a>
-          </div>
+        <div class="header-content">
+          <a href="#home" class="logo">Portfolio</a>
 
-          <!-- Desktop Navigation -->
-          <div class="nav-links desktop-nav">
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- Navigation -->
+          <nav class="nav" id="mainNav">
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
-            <a href="#resume" class="nav-link">Resume</a>
             <a href="#skills" class="nav-link">Skills</a>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#work" class="nav-link">Work</a>
             <a href="#contact" class="nav-link">Contact</a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <label for="mobile-menu-toggle" class="mobile-menu-btn">
-            <span class="hamburger"></span>
-          </label>
-        </div>
-
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav">
-          <a href="#home" class="nav-link-mobile">Home</a>
-          <a href="#about" class="nav-link-mobile">About</a>
-          <a href="#resume" class="nav-link-mobile">Resume</a>
-          <a href="#skills" class="nav-link-mobile">Skills</a>
-          <a href="#portfolio" class="nav-link-mobile">Portfolio</a>
-          <a href="#contact" class="nav-link-mobile">Contact</a>
+          </nav>
         </div>
       </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title gradient-text">Creative Designer</h1>
+          <div class="hero-badge">Available for Opportunities in Japan</div>
+          <h1 class="hero-title">
+            Hi, I'm a <span class="text-gradient">Creative Designer</span>
+          </h1>
           <p class="hero-subtitle">
-            UI/UX Design • Graphic Design • Video Editing
-          </p>
-          <p class="hero-description">
-            Crafting beautiful digital experiences with creativity and
-            precision.<br />
-            Available for opportunities in Japan.
+            UI/UX Designer, Graphic Designer & Video Editor specializing in
+            creating engaging digital experiences
           </p>
           <div class="hero-buttons">
-            <a href="#portfolio" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
           </div>
         </div>
-        <a href="#about" class="scroll-down">
-          <svg
-            class="bounce"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </a>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section bg-white">
+    <section id="about" class="about">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">About Me</h2>
-          <div class="title-underline"></div>
-        </div>
-
         <div class="about-grid">
           <div class="about-image">
-            <img
-              src="https://images.unsplash.com/photo-1610834651699-1d76adff0c6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXNpZ25lciUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjU1MjYzNDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Designer workspace"
-            />
+            <div class="about-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600"
+                alt="Profile"
+                class="profile-img"
+              />
+            </div>
           </div>
-
           <div class="about-content">
-            <h3 class="about-subtitle">
-              Passionate Designer & Creative Professional
-            </h3>
+            <h2 class="section-title">About Me</h2>
             <p class="about-text">
-              I'm a multidisciplinary designer with expertise in UI/UX design,
-              graphic design, and video editing. With a keen eye for detail and
-              a passion for creating beautiful, functional designs, I help
-              brands tell their stories through visual excellence.
+              I'm a passionate designer with expertise in UI/UX design, graphic
+              design, and video editing. With a keen eye for detail and a
+              commitment to creating exceptional user experiences, I transform
+              ideas into visually stunning and functional designs.
             </p>
             <p class="about-text">
-              Currently seeking new opportunities in Japan to bring my creative
-              skills and international perspective to innovative projects. I
-              believe in the power of design to solve problems and create
-              meaningful user experiences.
+              Currently seeking opportunities in Japan where I can contribute my
+              skills to innovative projects and collaborate with talented teams
+              to create meaningful digital experiences.
             </p>
-
-            <a href="#" class="btn btn-primary download-btn">
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+            </div>
+            <a href="resume.pdf" download class="btn btn-primary">
               <svg
                 width="20"
                 height="20"
@@ -138,334 +109,88 @@
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
               </svg>
-              <span>Download Resume</span>
+              Download Resume
             </a>
-
-            <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <rect
-                      x="2"
-                      y="7"
-                      width="20"
-                      height="14"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                  </svg>
-                </div>
-                <div class="stat-value">50+</div>
-                <div class="stat-label">Projects Completed</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                  </svg>
-                </div>
-                <div class="stat-value">30+</div>
-                <div class="stat-label">Happy Clients</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <circle cx="12" cy="8" r="7"></circle>
-                    <polyline
-                      points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
-                    ></polyline>
-                  </svg>
-                </div>
-                <div class="stat-value">5+</div>
-                <div class="stat-label">Years Experience</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="section bg-white">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Resume</h2>
-          <div class="title-underline"></div>
-          <p class="section-description">
-            My professional journey and qualifications
-          </p>
-          <a href="#" class="btn btn-primary download-btn">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            <span>Download Resume PDF</span>
-          </a>
-        </div>
-
-        <div class="resume-grid">
-          <!-- Experience -->
-          <div class="resume-main">
-            <div class="resume-section-title">
-              <div class="resume-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
-              </div>
-              <h3>Work Experience</h3>
-            </div>
-
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <div class="timeline-header">
-                    <h4>Senior UI/UX Designer</h4>
-                    <span class="timeline-period">2022 - Present</span>
-                  </div>
-                  <p class="timeline-company">Creative Digital Agency</p>
-                  <p class="timeline-description">
-                    Leading design projects for international clients, creating
-                    user-centered digital experiences.
-                  </p>
-                  <ul class="timeline-achievements">
-                    <li>
-                      Led redesign of e-commerce platform, increasing
-                      conversions by 35%
-                    </li>
-                    <li>Managed team of 3 junior designers</li>
-                    <li>Delivered 15+ successful projects</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <div class="timeline-header">
-                    <h4>Graphic Designer & Video Editor</h4>
-                    <span class="timeline-period">2020 - 2022</span>
-                  </div>
-                  <p class="timeline-company">Media Production Studio</p>
-                  <p class="timeline-description">
-                    Created visual content for brands, including video
-                    production and graphic design.
-                  </p>
-                  <ul class="timeline-achievements">
-                    <li>Produced 50+ promotional videos for various clients</li>
-                    <li>Designed brand identities for 20+ companies</li>
-                    <li>Won "Best Motion Graphics" award in 2021</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <div class="timeline-header">
-                    <h4>Junior UI/UX Designer</h4>
-                    <span class="timeline-period">2019 - 2020</span>
-                  </div>
-                  <p class="timeline-company">Tech Startup</p>
-                  <p class="timeline-description">
-                    Contributed to mobile app design and web interface
-                    development.
-                  </p>
-                  <ul class="timeline-achievements">
-                    <li>Designed mobile app with 100k+ downloads</li>
-                    <li>Conducted user research and usability testing</li>
-                    <li>Created comprehensive design system</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education & Certifications -->
-          <div class="resume-sidebar">
-            <!-- Education -->
-            <div class="resume-section-title">
-              <div class="resume-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                </svg>
-              </div>
-              <h3>Education</h3>
-            </div>
-
-            <div class="education-list">
-              <div class="education-item">
-                <h4>Bachelor of Design</h4>
-                <p class="education-school">Design University</p>
-                <p class="education-period">2015 - 2019</p>
-                <p class="education-details">
-                  Major in Digital Design with focus on UI/UX and Motion
-                  Graphics
-                </p>
-              </div>
-
-              <div class="education-item">
-                <h4>Professional Certificate</h4>
-                <p class="education-school">Adobe Creative Suite Mastery</p>
-                <p class="education-period">2020</p>
-                <p class="education-details">
-                  Advanced certification in Photoshop, Illustrator, Premiere
-                  Pro, and After Effects
-                </p>
-              </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="resume-section-title">
-              <div class="resume-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="8" r="7"></circle>
-                  <polyline
-                    points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
-                  ></polyline>
-                </svg>
-              </div>
-              <h3>Certifications</h3>
-            </div>
-
-            <div class="certifications-list">
-              <div class="certification-item">
-                Google UX Design Professional Certificate
-              </div>
-              <div class="certification-item">Adobe Certified Expert (ACE)</div>
-              <div class="certification-item">
-                Figma Advanced Design Certificate
-              </div>
-              <div class="certification-item">Motion Design Certificate</div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section bg-gray">
+    <section id="skills" class="skills">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">My Skills</h2>
-          <div class="title-underline"></div>
-          <p class="section-description">
-            A comprehensive skill set to bring your ideas to life
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-subtitle">
+            My creative toolkit and professional capabilities
           </p>
         </div>
 
         <div class="skills-grid">
-          <div class="skill-card purple-gradient">
+          <!-- UI/UX Design -->
+          <div class="skill-card">
             <div class="skill-icon">
               <svg
-                width="32"
-                height="32"
+                width="48"
+                height="48"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
               >
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M9 3v18"></path>
               </svg>
             </div>
-            <h3>UI/UX Design</h3>
-            <p>Creating intuitive and beautiful user interfaces</p>
-            <ul class="skill-list">
-              <li>User Research</li>
-              <li>Wireframing</li>
-              <li>Prototyping</li>
-              <li>User Testing</li>
-              <li>Information Architecture</li>
-            </ul>
+            <h3 class="skill-title">UI/UX Design</h3>
+            <p class="skill-description">
+              Creating intuitive and beautiful user interfaces with a focus on
+              user experience and accessibility.
+            </p>
+            <div class="skill-tools">
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">Adobe XD</span>
+              <span class="tool-tag">Sketch</span>
+              <span class="tool-tag">Prototyping</span>
+            </div>
           </div>
 
-          <div class="skill-card blue-gradient">
+          <!-- Graphic Design -->
+          <div class="skill-card">
             <div class="skill-icon">
               <svg
-                width="32"
-                height="32"
+                width="48"
+                height="48"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
               >
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
               </svg>
             </div>
-            <h3>Graphic Design</h3>
-            <p>Crafting compelling visual identities</p>
-            <ul class="skill-list">
-              <li>Brand Identity</li>
-              <li>Logo Design</li>
-              <li>Print Design</li>
-              <li>Illustration</li>
-              <li>Typography</li>
-            </ul>
+            <h3 class="skill-title">Graphic Design</h3>
+            <p class="skill-description">
+              Developing compelling visual identities, branding materials, and
+              marketing assets.
+            </p>
+            <div class="skill-tools">
+              <span class="tool-tag">Illustrator</span>
+              <span class="tool-tag">Photoshop</span>
+              <span class="tool-tag">InDesign</span>
+              <span class="tool-tag">Branding</span>
+            </div>
           </div>
 
-          <div class="skill-card indigo-gradient">
+          <!-- Video Editing -->
+          <div class="skill-card">
             <div class="skill-icon">
               <svg
-                width="32"
-                height="32"
+                width="48"
+                height="48"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -475,77 +200,16 @@
                 <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
               </svg>
             </div>
-            <h3>Video Editing</h3>
-            <p>Bringing stories to life through motion</p>
-            <ul class="skill-list">
-              <li>Motion Graphics</li>
-              <li>Color Grading</li>
-              <li>Sound Design</li>
-              <li>Visual Effects</li>
-              <li>Storytelling</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tools-section">
-          <h3 class="tools-title">Tools & Technologies</h3>
-          <div class="tools-list">
-            <div class="tool-badge">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M12 2l.642 2.223L15 5l-2.358.777L12 8 11.358 5.777 9 5l2.358-.777zM6 8l.943 3.368L10 12l-3.057.632L6 16l-.943-3.368L2 12l3.057-.632zM12 15l.642 2.223L15 18l-2.358.777L12 21l-.642-2.223L9 18l2.358-.777z"
-                ></path>
-              </svg>
-              <span>Figma</span>
-            </div>
-            <div class="tool-badge">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
-              </svg>
-              <span>Adobe CC</span>
-            </div>
-            <div class="tool-badge">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polygon points="23 7 16 12 23 17 23 7"></polygon>
-                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
-              </svg>
-              <span>Premiere Pro</span>
-            </div>
-            <div class="tool-badge">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polygon
-                  points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
-                ></polygon>
-              </svg>
-              <span>After Effects</span>
+            <h3 class="skill-title">Video Editing</h3>
+            <p class="skill-description">
+              Producing engaging video content with motion graphics, color
+              grading, and professional editing.
+            </p>
+            <div class="skill-tools">
+              <span class="tool-tag">Premiere Pro</span>
+              <span class="tool-tag">After Effects</span>
+              <span class="tool-tag">DaVinci Resolve</span>
+              <span class="tool-tag">Motion Graphics</span>
             </div>
           </div>
         </div>
@@ -553,320 +217,190 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section bg-white">
+    <section id="work" class="portfolio">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">My Portfolio</h2>
-          <div class="title-underline"></div>
-          <p class="section-description">
-            A selection of my recent projects across different disciplines
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-subtitle">
+            A selection of projects showcasing my design and creative
+            capabilities
           </p>
         </div>
 
-        <!-- Portfolio Filter Tabs using CSS only -->
-        <div class="portfolio-filter-wrapper">
-          <input type="radio" name="portfolio-filter" id="filter-all" checked />
-          <input type="radio" name="portfolio-filter" id="filter-uiux" />
-          <input type="radio" name="portfolio-filter" id="filter-graphic" />
-          <input type="radio" name="portfolio-filter" id="filter-video" />
+        <!-- Category Filter -->
+        <div class="category-filter">
+          <button class="category-btn active" data-category="all">
+            All Work
+          </button>
+          <button class="category-btn" data-category="uiux">
+            UI/UX Design
+          </button>
+          <button class="category-btn" data-category="graphic">
+            Graphic Design
+          </button>
+          <button class="category-btn" data-category="video">
+            Video Editing
+          </button>
+        </div>
 
-          <div class="portfolio-filters">
-            <label for="filter-all" class="filter-btn">All Work</label>
-            <label for="filter-uiux" class="filter-btn">UI/UX Design</label>
-            <label for="filter-graphic" class="filter-btn"
-              >Graphic Design</label
-            >
-            <label for="filter-video" class="filter-btn">Video Editing</label>
-          </div>
-
-          <div class="portfolio-grid">
-            <!-- Project 1 - UI/UX -->
-            <div class="portfolio-item" data-category="uiux">
-              <div class="portfolio-image">
-                <img
-                  src="https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY1NTkyMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="E-Commerce Mobile App"
-                />
-              </div>
-              <div class="portfolio-overlay">
-                <h3 class="portfolio-title">E-Commerce Mobile App</h3>
-                <p class="portfolio-description">
-                  Modern shopping app with seamless UX
-                </p>
-                <div class="portfolio-details">
-                  <p><strong>Client:</strong> Fashion Retail Co.</p>
-                  <p><strong>Role:</strong> Lead UI/UX Designer</p>
-                  <p><strong>Tools:</strong> Figma, Adobe XD, Principle</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 2 - Graphic -->
-            <div class="portfolio-item" data-category="graphic">
-              <div class="portfolio-image">
-                <img
-                  src="https://images.unsplash.com/photo-1652805363265-b8fbf9bbdfac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWduJTIwcG9ydGZvbGlvfGVufDF8fHx8MTc2NTU0MDI1Mnww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Brand Identity Design"
-                />
-              </div>
-              <div class="portfolio-overlay">
-                <h3 class="portfolio-title">Brand Identity Design</h3>
-                <p class="portfolio-description">
-                  Complete brand system for tech startup
-                </p>
-                <div class="portfolio-details">
-                  <p><strong>Client:</strong> TechFlow Solutions</p>
-                  <p><strong>Role:</strong> Brand Designer</p>
-                  <p>
-                    <strong>Tools:</strong> Illustrator, InDesign, Photoshop
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 - Video -->
-            <div class="portfolio-item" data-category="video">
-              <div class="portfolio-image">
-                <img
-                  src="https://images.unsplash.com/photo-1575320854760-bfffc3550640?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMGVkaXRpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzY1NjAyNjgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Product Launch Video"
-                />
-              </div>
-              <div class="portfolio-overlay">
-                <h3 class="portfolio-title">Product Launch Video</h3>
-                <p class="portfolio-description">
-                  Cinematic product reveal with motion graphics
-                </p>
-                <div class="portfolio-details">
-                  <p><strong>Client:</strong> Innovation Labs</p>
-                  <p><strong>Role:</strong> Video Editor & Motion Designer</p>
-                  <p><strong>Tools:</strong> Premiere Pro, After Effects</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 4 - UI/UX -->
-            <div class="portfolio-item" data-category="uiux">
-              <div class="portfolio-image">
-                <img
-                  src="https://images.unsplash.com/photo-1629494893504-d41e26a02631?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1aSUyMHV4JTIwZGVzaWduJTIwbW9ja3VwfGVufDF8fHx8MTc2NTU1NDMxMXww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Dashboard UI Design"
-                />
-              </div>
-              <div class="portfolio-overlay">
-                <h3 class="portfolio-title">Dashboard UI Design</h3>
-                <p class="portfolio-description">
-                  Analytics dashboard with data visualization
-                </p>
-                <div class="portfolio-details">
-                  <p><strong>Client:</strong> DataMetrics Pro</p>
-                  <p><strong>Role:</strong> Senior UI/UX Designer</p>
-                  <p><strong>Tools:</strong> Figma, Sketch, Framer</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 5 - UI/UX -->
-            <div class="portfolio-item" data-category="uiux">
-              <div class="portfolio-image">
-                <img
-                  src="https://images.unsplash.com/photo-1677214467820-ab069619bbb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ258ZW58MXx8fHwxNzY1NTk4MDgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Website Redesign"
-                />
-              </div>
-              <div class="portfolio-overlay">
-                <h3 class="portfolio-title">Website Redesign</h3>
-                <p class="portfolio-description">
-                  Modern corporate website redesign
-                </p>
-                <div class="portfolio-details">
-                  <p><strong>Client:</strong> Global Finance Group</p>
-                  <p><strong>Role:</strong> Lead Designer</p>
-                  <p><strong>Tools:</strong> Figma, Adobe XD, InVision</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 6 - Graphic -->
-            <div class="portfolio-item" data-category="graphic">
-              <div class="portfolio-image">
-                <img
-                  src="https://images.unsplash.com/photo-1652805363265-b8fbf9bbdfac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWduJTIwcG9ydGZvbGlvfGVufDF8fHx8MTc2NTU0MDI1Mnww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Social Media Campaign"
-                />
-              </div>
-              <div class="portfolio-overlay">
-                <h3 class="portfolio-title">Social Media Campaign</h3>
-                <p class="portfolio-description">
-                  Complete social media design system
-                </p>
-                <div class="portfolio-details">
-                  <p><strong>Client:</strong> EcoLife Products</p>
-                  <p><strong>Role:</strong> Graphic Designer</p>
-                  <p>
-                    <strong>Tools:</strong> Photoshop, Illustrator, Canva Pro
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projects will be dynamically inserted here -->
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-gradient">
+    <section id="contact" class="contact">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="title-underline"></div>
-          <p class="section-description">
-            I'm currently looking for new opportunities in Japan. Let's connect
-            and discuss how I can contribute to your team!
-          </p>
-        </div>
-
         <div class="contact-grid">
-          <a href="mailto:your.email@example.com" class="contact-info-card">
-            <div class="contact-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                ></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </div>
-            <h3>Email</h3>
-            <p>yashvashisht15@gmail.com</p>
-          </a>
+          <div class="contact-info">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-description">
+              I'm currently available for freelance work and full-time
+              opportunities in Japan. Feel free to reach out if you'd like to
+              discuss a project or just want to connect.
+            </p>
 
-          <a
-            href="https://in.linkedin.com/in/yash-vashisht-670223163"
-            target="_blank"
-            class="contact-info-card"
-          >
-            <div class="contact-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                ></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </div>
-            <h3>LinkedIn</h3>
-            <p>Yash-Vashisht</p>
-          </a>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">yashvashisht15@gmail.com</div>
+                </div>
+              </div>
 
-          <a
-            href="https://github.com/Yash-Vashisht"
-            target="_blank"
-            class="contact-info-card"
-          >
-            <div class="contact-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                ></path>
-              </svg>
-            </div>
-            <h3>GitHub</h3>
-            <p>Yash-Vashisht</p>
-          </a>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">Phone</div>
+                  <div class="contact-value">+81 (XXX) XXXX-XXXX</div>
+                </div>
+              </div>
 
-          <div class="contact-info-card">
-            <div class="contact-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">Tokyo, Japan</div>
+                </div>
+              </div>
             </div>
-            <h3>Location</h3>
-            <p>Open to relocate to Japan</p>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Dribbble">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm7.83 6.89c1.27 1.57 2.05 3.56 2.14 5.74-.56-.13-3.12-.66-5.69-.29-.12-.29-.24-.58-.37-.87-.37-.86-.78-1.73-1.2-2.57 2.73-1.11 3.97-2.73 4.12-3.01zM12 2.03c2.45 0 4.69.94 6.36 2.48-.12.24-1.2 1.74-3.84 2.73-1.56-2.87-3.29-5.22-3.55-5.58.33-.04.67-.07 1.03-.07zm-2.32.32c.25.35 1.97 2.7 3.54 5.53-4.46 1.19-8.39 1.17-8.81 1.16.59-2.98 2.65-5.39 5.27-6.69zm-5.65 9.68v-.37c.42.01 5.14.07 9.95-1.38.47.92.92 1.85 1.33 2.79-5.17 1.45-7.92 5.44-8.14 5.79-1.56-1.66-2.52-3.88-2.52-6.33.01-.17.02-.34.03-.5zm9.97 9.97c-2.17 0-4.16-.7-5.78-1.88.18-.35 2.23-4.13 7.85-5.87.02-.01.04-.01.05-.02.92 2.39 1.3 4.39 1.41 4.95-1.08.75-2.4 1.17-3.82 1.17zm5.38-2.14c-.08-.47-.43-2.32-1.27-4.68 2.34-.37 4.39.24 4.64.32-.32 2.04-1.45 3.81-3.07 5.01z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="contact-form-container">
-          <h3 class="contact-form-title">Send Me a Message</h3>
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/YOUR_FORM_ID"
-            method="POST"
-          >
-            <div class="form-row">
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm">
               <div class="form-group">
-                <label for="name">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="John Doe"
-                  required
-                />
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
               </div>
+
               <div class="form-group">
-                <label for="email">Your Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="john@example.com"
-                  required
-                />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
               </div>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Job Opportunity"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="6"
-                placeholder="Tell me about the opportunity..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              Send Message
-            </button>
-          </form>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -875,25 +409,71 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <p>© 2025 Creative Designer Portfolio. All rights reserved.</p>
-          <div class="footer-heart">
-            <span>Made with</span>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-              ></path>
-            </svg>
-            <span>for Japan opportunities</span>
+          <p>&copy; 2024 Portfolio. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-body" id="modalBody">
+          <!-- Content will be dynamically inserted -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Detail View -->
+    <div class="detail-view" id="detailView">
+      <div class="detail-header">
+        <div class="container">
+          <div class="detail-header-content">
+            <button class="detail-back" id="detailBack">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+              Back to Portfolio
+            </button>
+            <button class="detail-close" id="detailClose">&times;</button>
+          </div>
+        </div>
+      </div>
+      <div class="detail-content" id="detailContent">
+        <!-- Content will be dynamically inserted -->
+      </div>
+    </div>
+
+    <!-- Success Message Toast -->
+    <div class="toast" id="toast">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span id="toastMessage">Message sent successfully!</span>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
