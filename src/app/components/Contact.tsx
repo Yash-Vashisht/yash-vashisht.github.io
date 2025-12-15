@@ -65,7 +65,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-blue-100">Email</p>
-                    <p className="text-white">your.email@example.com</p>
+                    <p className="text-white">yashvashisht15@gmail.com</p>
                   </div>
                 </div>
 
@@ -97,7 +97,7 @@ export function Contact() {
                 <div className="flex gap-4">
                   <a
                     href="https://linkedin.com"
-                    target="_blank"
+                    target="https://in.linkedin.com/in/yash-vashisht-670223163"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-white hover:text-blue-600 transition-all"
                   >
@@ -105,7 +105,7 @@ export function Contact() {
                   </a>
                   <a
                     href="https://github.com"
-                    target="_blank"
+                    target="https://github.com/Yash-Vashisht"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-white hover:text-blue-600 transition-all"
                   >
