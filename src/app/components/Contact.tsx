@@ -96,16 +96,16 @@ export function Contact() {
                 <p className="text-sm text-blue-100 mb-4">Follow me on social media</p>
                 <div className="flex gap-4">
                   <a
-                    href="https://linkedin.com"
-                    target="https://in.linkedin.com/in/yash-vashisht-670223163"
+                    href="https://in.linkedin.com/in/yash-vashisht-670223163"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-white hover:text-blue-600 transition-all"
                   >
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="https://github.com"
-                    target="https://github.com/Yash-Vashisht"
+                    href="https://github.com/Yash-Vashisht"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-white hover:text-blue-600 transition-all"
                   >
