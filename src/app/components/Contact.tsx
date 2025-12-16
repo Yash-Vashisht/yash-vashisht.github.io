@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Mail, MapPin, Linkedin, Github, Download, Send } from 'lucide-react';
 import { useState, FormEvent, ChangeEvent } from 'react';
+import IconmonstrBehance from '../../imports/IconmonstrBehance11';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -75,7 +76,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-blue-100">Location</p>
-                    <p className="text-white">Available for Japan</p>
+                    <p className="text-white">Available for New Delhi</p>
                   </div>
                 </div>
 
@@ -110,6 +111,16 @@ export function Contact() {
                     className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-white hover:text-blue-600 transition-all"
                   >
                     <Github size={20} />
+                  </a>
+                  <a
+                    href="https://behance.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-white hover:text-blue-600 transition-all"
+                  >
+                    <div className="w-5 h-5">
+                      <IconmonstrBehance />
+                    </div>
                   </a>
                 </div>
               </div>

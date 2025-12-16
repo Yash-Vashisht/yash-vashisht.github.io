@@ -7,7 +7,7 @@ export function Footer() {
             © 2025 All rights reserved.
           </p>
           <p className="text-gray-400 text-center md:text-right">
-            Designed & Built with passion for excellence
+            Designed & Built by Yash Vashisht
           </p>
         </div>
       </div>

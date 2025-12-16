@@ -18,11 +18,6 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full mb-6">
-                Available for Opportunities in Japan
-              </span>
-            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl mb-6 text-gray-900">
               Creative Designer &
               <br />
