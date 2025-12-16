@@ -33,7 +33,7 @@ export function Header() {
             onClick={() => scrollToSection('hero')}
             className="text-xl sm:text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
           >
-            Portfolio
+            Yash Vashisht
           </button>
 
           {/* Desktop Navigation */}
