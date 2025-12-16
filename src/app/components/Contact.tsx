@@ -76,7 +76,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-blue-100">Location</p>
-                    <p className="text-white">Available for New Delhi</p>
+                    <p className="text-white">New Delhi,India</p>
                   </div>
                 </div>
 
