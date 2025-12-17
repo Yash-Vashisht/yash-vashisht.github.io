@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, MapPin, Linkedin, Github, Download, Send } from 'lucide-react';
-import IconmonstrBehance from '../../imports/IconmonstrBehance11';
+import IconmonstrBehance11 from '../../imports/IconmonstrBehance11';
 
 export function Contact() {
   return (
@@ -105,7 +105,7 @@ export function Contact() {
                     className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center hover:bg-white/20 border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-110"
                   >
                     <div className="w-5 h-5">
-                      <IconmonstrBehance />
+                      <IconmonstrBehance11 />
                     </div>
                   </a>
                 </div>
