@@ -62,7 +62,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm text-blue-100">Location</p>
-                    <p className="text-sm sm:text-base text-white">Available for Japan</p>
+                    <p className="text-sm sm:text-base text-white">New Delhi,India</p>
                   </div>
                 </div>
 
