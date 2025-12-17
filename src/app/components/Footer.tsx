@@ -1,12 +1,12 @@
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-gray-900 text-white py-6 sm:py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
+          <p className="text-sm sm:text-base text-gray-400 text-center md:text-left">
             © 2025 All rights reserved.
           </p>
-          <p className="text-gray-400 text-center md:text-right">
+          <p className="text-sm sm:text-base text-gray-400 text-center md:text-right">
             Designed & Built by Yash Vashisht
           </p>
         </div>

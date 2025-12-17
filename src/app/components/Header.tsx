@@ -31,34 +31,34 @@ export function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-xl sm:text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+            className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
           >
             Yash Vashisht
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             <button
               onClick={() => scrollToSection('about')}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-sm lg:text-base text-gray-700 hover:text-blue-600 transition-colors"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('skills')}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-sm lg:text-base text-gray-700 hover:text-blue-600 transition-colors"
             >
               Skills
             </button>
             <button
               onClick={() => scrollToSection('work')}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-sm lg:text-base text-gray-700 hover:text-blue-600 transition-colors"
             >
               Work
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+              className="px-4 lg:px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors text-sm lg:text-base"
             >
               Contact
             </button>
@@ -67,7 +67,8 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
+            className="md:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors touch-manipulation"
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -75,28 +76,28 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 space-y-3 border-t border-gray-200">
+          <nav className="md:hidden py-4 space-y-2 border-t border-gray-200">
             <button
               onClick={() => scrollToSection('about')}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors rounded"
+              className="block w-full text-left px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors rounded touch-manipulation"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('skills')}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors rounded"
+              className="block w-full text-left px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors rounded touch-manipulation"
             >
               Skills
             </button>
             <button
               onClick={() => scrollToSection('work')}
-              className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors rounded"
+              className="block w-full text-left px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors rounded touch-manipulation"
             >
               Work
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition-colors rounded"
+              className="block w-full text-left px-4 py-3 bg-blue-600 text-white hover:bg-blue-700 transition-colors rounded touch-manipulation"
             >
               Contact
             </button>
